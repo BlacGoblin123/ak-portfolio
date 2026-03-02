@@ -101,8 +101,8 @@ export default function Workshop() {
                 <div className="section-label">Workshop</div>
 
                 {/* Header */}
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'clamp(2rem,5vw,6rem)', marginBottom: '4rem', alignItems: 'end' }}>
-                    <h2>BUSINESS<br />ACCELERATOR<br />WORKSHOP</h2>
+                <div className="workshop-header-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'clamp(2rem,5vw,6rem)', marginBottom: '4rem', alignItems: 'end' }}>
+                    <h2 style={{ wordBreak: 'break-word', hyphens: 'auto' }}>BUSINESS<br />ACCELERATOR<br />WORKSHOP</h2>
                     <div>
                         <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '1.5rem' }}>
                             {['2 Days', '2 Hrs / Session', 'Hands-On', 'Auckland, NZ'].map(tag => (
@@ -134,7 +134,7 @@ export default function Workshop() {
 
                 {/* Curriculum */}
                 <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.9rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--ink-60)', marginBottom: '1.5rem' }}>Curriculum</div>
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(320px,1fr))', gap: '1px', background: 'var(--ink-20)', border: '1px solid var(--ink-20)', marginBottom: '3rem' }}>
+                <div className="curriculum-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(320px,1fr))', gap: '1px', background: 'var(--ink-20)', border: '1px solid var(--ink-20)', marginBottom: '3rem' }}>
                     {curriculum.map((day, di) => (
                         <div key={di} ref={el => { if (el) dayRefs.current[di] = el; }}
                             style={{ background: 'var(--bg)', position: 'relative' }}>

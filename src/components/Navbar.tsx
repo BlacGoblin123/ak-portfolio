@@ -14,7 +14,7 @@ export default function Navbar() {
     };
 
     return (
-        <nav ref={navRef} style={{
+        <nav ref={navRef} className="nav-container" style={{
             position: 'fixed', top: 0, left: 0, right: 0,
             zIndex: 1000,
             padding: '1.4rem clamp(1.5rem,5vw,5rem)',

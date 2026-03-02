@@ -235,6 +235,10 @@ a {
     display: none !important;
   }
 
+  .nav-container {
+    padding: 1rem 1.5rem !important;
+  }
+
   /* ── Hero ───────────────────────────────────── */
   .hero-content {
     flex-direction: column !important;
@@ -299,6 +303,16 @@ a {
 
   .about-highlights {
     grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* ── Workshop ───────────────────────────────── */
+  .curriculum-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .workshop-header-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
   }
 
   /* ── Projects (disable horizontal pin on mobile) */
