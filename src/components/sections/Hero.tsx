@@ -178,7 +178,7 @@ export default function Hero() {
             </div>
 
             {/* ── Availability ──────────────────────────────────────────── */}
-            <div style={{
+            <div className="hero-availability" style={{
                 position: 'absolute', top: '6.5rem', right: 'clamp(1.5rem,5vw,5rem)',
                 display: 'flex', alignItems: 'center', gap: '0.5rem',
                 fontFamily: 'var(--font-mono)', fontSize: '0.9rem', letterSpacing: '0.1em',
@@ -192,7 +192,7 @@ export default function Hero() {
             </div>
 
             {/* ── Name ─────────────────────────────────────────────────── */}
-            <div style={{ overflow: 'hidden', marginBottom: '1.2rem', position: 'relative', zIndex: 2 }}>
+            <div className="hero-name" style={{ overflow: 'hidden', marginBottom: '1.2rem', position: 'relative', zIndex: 2 }}>
                 <h1 ref={nameRef} style={{ lineHeight: 0.87, letterSpacing: '-0.01em' }}>
                     ATICHAT<br />KHANMA
                 </h1>
