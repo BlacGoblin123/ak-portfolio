@@ -36,7 +36,7 @@ export default function Navbar() {
                     >{label}</button>
                 ))}
                 <a href="https://www.linkedin.com/in/atichat-khanma" target="_blank" rel="noopener noreferrer"
-                    className="btn btn-filled" style={{ fontSize: '0.62rem', padding: '0.58rem 1.1rem' }}>
+                    className="btn btn-filled hide-mobile" style={{ fontSize: '0.62rem', padding: '0.58rem 1.1rem' }}>
                     LinkedIn ↗
                 </a>
             </div>

@@ -64,13 +64,14 @@ export default function Contact() {
                     {links.map((l, i) => (
                         <a key={i} href={l.href} target={l.href.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer"
                             ref={el => { if (el) linkRefs.current[i] = el; }}
-                            style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1.4rem 0', borderBottom: '1px solid rgba(229,229,229,0.12)', color: 'var(--bg)', textDecoration: 'none', gap: '1rem' }}
+                            className="contact-link-row"
+                            style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1.4rem 0', borderBottom: '1px solid rgba(229,229,229,0.12)', color: 'var(--bg)', textDecoration: 'none', gap: '1rem', position: 'relative' }}
                             onMouseEnter={e => { const arrow = e.currentTarget.querySelector('.arrow') as HTMLElement; if (arrow) { arrow.style.color = 'var(--accent)'; arrow.style.transform = 'translateX(6px)'; } }}
                             onMouseLeave={e => { const arrow = e.currentTarget.querySelector('.arrow') as HTMLElement; if (arrow) { arrow.style.color = ''; arrow.style.transform = ''; } }}
                         >
                             <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.9rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'rgba(229,229,229,0.5)', minWidth: '7rem' }}>{l.label}</span>
-                            <span style={{ fontFamily: 'var(--font-body)', fontSize: 'clamp(1.2rem,2vw,1.35rem)', flex: 1 }}>{l.value}</span>
-                            <span className="arrow" style={{ fontFamily: 'var(--font-mono)', fontSize: '1.1rem', transition: 'color 0.2s, transform 0.2s' }}>→</span>
+                            <span className="contact-link-value" style={{ fontFamily: 'var(--font-body)', fontSize: 'clamp(1.2rem,2vw,1.35rem)', flex: 1 }}>{l.value}</span>
+                            <span className="arrow" style={{ position: 'absolute', right: 0, fontFamily: 'var(--font-mono)', fontSize: '1.1rem', transition: 'color 0.2s, transform 0.2s' }}>→</span>
                         </a>
                     ))}
                 </div>
