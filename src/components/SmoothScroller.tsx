@@ -12,6 +12,8 @@ export default function SmoothScroller({ children }: { children: React.ReactNode
             duration: 1.4,
             easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
             smoothWheel: true,
+            smoothTouch: true, // Enables smooth scroll on mobile touch
+            syncTouch: true,
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
         } as any);
         lenis.on('scroll', ScrollTrigger.update);

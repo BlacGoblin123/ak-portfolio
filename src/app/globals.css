@@ -210,8 +210,15 @@ a {
   }
 
   .btn {
-    font-size: 0.78rem;
-    padding: 0.85rem 1.5rem;
+    font-size: 0.82rem;
+    padding: 1rem 1.6rem;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .btn-filled {
+    width: 100%;
   }
 
   .tag {
@@ -232,7 +239,9 @@ a {
 
   .hero-ctas {
     justify-content: flex-start !important;
-    flex-wrap: wrap !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 1rem !important;
   }
 
   .hero-shapes {
