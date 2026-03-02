@@ -216,7 +216,7 @@ export default function Hero() {
                     }}>BUSINESS GRADUATE</span>
                     driving growth through strategic brand development, data-driven SEO, and innovative AI solutions. Based in Auckland, NZ.
                 </p>
-                <div ref={ctaRef} style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+                <div ref={ctaRef} className="hero-ctas" style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
                     <a href="#projects" className="btn btn-filled">View Work ↓</a>
                     <a href="mailto:atichat.khanma2000@gmail.com" className="btn">Email Me</a>
                 </div>

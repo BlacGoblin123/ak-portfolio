@@ -244,6 +244,10 @@ a {
     gap: 1rem !important;
   }
 
+  #hero {
+    padding-bottom: 12rem !important;
+  }
+
   .hero-shapes {
     display: none !important;
   }
@@ -257,6 +261,9 @@ a {
     border-right: 1px solid var(--ink-20) !important;
     border-bottom: 1px solid var(--ink-20) !important;
     text-align: center !important;
+    padding: 0.6rem !important;
+    font-size: 0.6rem !important;
+
     white-space: normal !important;
     font-size: 0.65rem !important;
     padding: 0.6rem 0.4rem !important;
